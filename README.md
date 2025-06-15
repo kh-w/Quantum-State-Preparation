@@ -1,13 +1,13 @@
 # Quantum-State-Preparation
 
 - [Introduction](#introduction)
+- [From-Rz-to-Ry-gate](#from-rz-to-ry-gate)
 - [Quantum-State-Preparation-n-3](#quantum-state-preparation-n-3)
   - [Methodology-n-3](#methodology-n-3)
   - [Result-n-3](#result-n-3)
 - [Quantum-State-Preparation-n-4](#quantum-state-preparation-n-4)
   - [Methodology-n-4](#methodology-n-4)
   - [Result-n-4](#result-n-4)
-- [Qiskit-Functions](#qiskit-functions)
 
 ![mini_proj_2_prob_3](https://drive.google.com/uc?id=1Xu7kYVS-crI-6B2owX6AD7acjgkoOxl4)
 
@@ -48,7 +48,16 @@ $=(R_Y(\theta_{10})\otimes R_Y(\theta_0))(\left|0\right\rangle\otimes\left|0\rig
 $=\cos(\frac{\theta_{10}}{2})\cos(\frac{\theta_{0}}{2})\left|00\right\rangle$\
 $=\Psi_0\left|00\right\rangle$\
 \
-Using the same algebraic steps, we can create the quantum state $\Psi_0\left|0\right\rangle_2+\Psi_1\left|1\right\rangle_2+\Psi_2\left|2\right\rangle_2+\Psi_3\left|3\right\rangle_2$.
+Using the same algebraic steps, we can create the quantum state $\Psi_0\left|0\right\rangle_2+\Psi_1\left|1\right\rangle_2+\Psi_2\left|2\right\rangle_2+\Psi_3\left|3\right\rangle_2$.\
+\
+In the following sections, we will go through the case $n=3$ and $n=4$, while higher values of $n$ can be designed similarly.
+
+## From-Rz-to-Ry-gate
+
+We can build $R_Y(\theta)$ from $R_Z(\theta)$ using the identity $R_Y(\theta)=S^\dagger HR_Z(\theta)HS$:
+
+![image](https://github.com/user-attachments/assets/8b1d9c8e-5f29-43d1-a706-aef4477c3e6e)
+
 
 ## Quantum-State-Preparation-n-3
 
@@ -72,6 +81,49 @@ Table A:\
 
 ### Result-n-3
 
+![image](https://github.com/user-attachments/assets/ccfcbccd-67a0-447e-a043-1d96a19da2fb)
 
+Define the $\theta$'s accordingly:
+
+![image](https://github.com/user-attachments/assets/ba828762-4142-4f8e-96b0-b7379e18868b)
+
+A circuit has been built, which can be found in the notebook:
+
+![image](https://github.com/user-attachments/assets/61f1166a-8e65-4750-a768-c34751ef44fb)
+
+Check the prepared state against the original state:
+
+![image](https://github.com/user-attachments/assets/a440ccff-e3e0-4955-9a37-e407480e5739)
+
+We successfully prepared the desired state for $n=3$ using a self-defined qiskit function.
 
 ## Quantum-State-Preparation-n-4
+
+### Methodology-n-4
+
+For $n=4$, we have a table similar to table A:\
+\
+Table B:
+![n_equals_4](https://drive.google.com/uc?id=1oToStd8b5iZq6RhwlEky_G91JA2POcFI)
+\
+Similarly we can build a circuit accordingly.
+
+### Result-n-4
+
+![image](https://github.com/user-attachments/assets/9a740885-da33-4ae9-8c65-cbb650b3fda5)
+
+Define the $\theta$'s accordingly:
+
+![image](https://github.com/user-attachments/assets/3c438bb9-2a35-428a-9d58-8579e4284fe0)
+
+A circuit has been built, which can be found in the notebook:
+
+![image](https://github.com/user-attachments/assets/ed4635ce-b2e0-444a-ba66-2bf64ecbd1b7)
+
+Check the prepared state against the original state:
+
+![image](https://github.com/user-attachments/assets/0f018c27-3047-4fdf-b4fe-6a72b1b4e121)
+
+We successfully prepared the desired state for $n=4$ using a self-defined qiskit function.
+
+
