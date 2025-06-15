@@ -9,8 +9,6 @@
   - [Methodology-n-4](#methodology-n-4)
   - [Result-n-4](#result-n-4)
 
-![mini_proj_2_prob_3](https://drive.google.com/uc?id=1Xu7kYVS-crI-6B2owX6AD7acjgkoOxl4)
-
 ## Introduction
 
 The goal of quantum state preparation is to prepare the superposition $\Psi_0\left|0\right\rangle_n+\Psi_1\left|1\right\rangle_n+...+\Psi_{2^n-1}\left|2^n-1\right\rangle_n$ from $\left|0\right\rangle_n$, where $\Psi_n>0$ for all $n$ and $\lVert\Psi\rVert_2=1$.\
